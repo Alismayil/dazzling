@@ -1,0 +1,38 @@
+
+.language {
+    width: 100%;
+    height: 90vh;
+    padding: 0px 320px;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 40px;
+        .conatinerLeft {
+            width: 60%;
+
+            .galleryUp {
+
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid gray;
+                padding: 20px 0px;
+
+            }
+
+            .markupDown {
+                width: 100%;
+                height: 79vh ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .markupImg{
+                    width: 100% ;
+                }
+                
+            }
+        }
+       
+    }
+}

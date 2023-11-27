@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    border-bottom: 2px solid rgb(232, 222, 222);
+
+    .logo {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navbarLink{
+            text-decoration: none;
+        }
+        p {
+            font-size: 30px;
+            color: #1fa67a;
+        }
+    }
+
+    .navbarBtns {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: start;
+
+        .btnUl {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            height: 100%;
+
+           
+
+            .aboutLi {
+                position: relative;
+                
+                .arrow{
+                    margin-left: 10px;
+                    font-size: 13px;
+                }
+                .aboutsubmenu {
+                    background-color: white;
+                    position: absolute;
+                    top: 50px;
+                    width: 300px;
+                    left: 0px;
+                    display: none;
+                    transition: 0.3s;
+                    box-shadow: -2px 12px 15px 2px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: -2px 12px 15px 2px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: -2px 12px 15px 2px rgba(0, 0, 0, 0.75);
+                    .options{
+                        display: flex;
+                        justify-content: start;
+                        padding: 10px 20px;
+                        color: gray;
+                        cursor: auto;
+                        border-bottom: 1px solid rgb(177, 174, 174);
+                    }
+                    .disabled{
+                        padding: 20px;
+                        color: gray;
+                        cursor: no-drop;
+                    }
+                    .subMenuLink {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        gap: 10px;
+                        justify-content: start;
+                        align-items: center;
+                        font-size: 16px;
+                        padding: 0px 10px;
+                        color: gray;
+
+                    }
+
+                    .subMenuLink:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            .aboutLi:hover .aboutsubmenu {
+                display: block;
+                transition: 0.3s;
+
+            }
+
+            li {
+                font-size: 16px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
+
+                a{
+                    padding: 18px 10px;
+                    text-decoration: none;
+                    color: grey;
+                }
+
+            }
+
+            li:hover {
+                background-color: #1fa67a;
+                cursor: pointer;
+                transition: 0.3s;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}
+
+.active{
+    
+        background-color: #1fa67a !important;
+        color: white !important;
+    
+}
